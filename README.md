@@ -3,7 +3,7 @@ Simple exercise for new Docker & Kubernetes on Azure trainee of the IT Learning 
 
 Exercise goals
 
-Distribute a docker image on an Azure registry
+Distribute a Docker image on an Azure registry
 
 Deploy workloads and services on a Kubernetes cluster 
 
@@ -11,7 +11,7 @@ Preconditions
 
 1. Docker is installed on your machine
 
-2. You have access to an Azure Subscription
+2. You have access to an Azure Subscription, someone created for your the AKS Kubernetes cluster and ECR Docker registry 
 
 Exercise Steps
 

@@ -49,6 +49,6 @@ kubectl create -f development-namespace.yaml
 
 kubectl create -f deployment_dev.yaml
 
-9. Create a service as an external load balancer for your application
+10. Create a service as an external load balancer for your application
 
 kubectl create -f service_dev.yaml

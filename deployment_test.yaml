@@ -1,0 +1,23 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: polybe
+  namespace: testing
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: polybe
+  template:
+    metadata:
+      labels:
+        app: polybe
+    spec:
+      containers:
+        - name: polybeapp
+          image: regname.azurecr.io/polybe:latest
+          command: ["java","-Dspring.profiles.active=test","-jar","app.jar"]
+          ports:
+            - containerPort: 8080
+          imagePullPolicy: Always
